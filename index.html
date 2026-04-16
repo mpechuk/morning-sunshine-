@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Morning Sunshine — April 16, 2026</title>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Georgia,'Times New Roman',serif;background:#fef9f0;color:#1a1a1a;line-height:1.6}
+/* MASTHEAD */
+.masthead{background:#1c1917;color:#fef9f0;text-align:center;border-bottom:4px solid #d97706}
+.masthead-top{padding:24px 20px 16px;border-bottom:1px solid rgba(255,255,255,.15)}
+.edition-label{font-size:.7rem;letter-spacing:3px;text-transform:uppercase;color:#d97706;margin-bottom:8px;font-family:system-ui,sans-serif}
+.newspaper-name{font-size:clamp(2.4rem,8vw,5rem);font-weight:900;letter-spacing:-2px;color:#fbbf24;text-shadow:0 2px 20px rgba(251,191,36,.3);font-style:italic;line-height:1}
+.motto{font-size:.95rem;font-style:italic;color:rgba(255,255,255,.65);margin-top:6px;letter-spacing:2px}
+.masthead-meta{display:flex;justify-content:space-between;align-items:center;padding:10px 28px;font-size:.78rem;color:rgba(255,255,255,.55);font-family:system-ui,sans-serif}
+.masthead-meta .date{font-weight:700;color:#fbbf24;font-size:.85rem}
+.ticker{background:#d97706;color:#fff;padding:8px 0;text-align:center;font-size:.8rem;font-weight:700;letter-spacing:3px;text-transform:uppercase;font-family:system-ui,sans-serif}
+/* LAYOUT */
+.container{max-width:1200px;margin:0 auto;padding:36px 16px}
+/* FEATURED */
+.featured{display:grid;grid-template-columns:1fr 1fr;background:#fff;border-radius:14px;overflow:hidden;box-shadow:0 4px 28px rgba(0,0,0,.1);margin-bottom:44px}
+@media(max-width:760px){.featured{grid-template-columns:1fr}}
+.featured-img{display:flex;align-items:center;justify-content:center;padding:60px 40px;min-height:340px}
+.featured-emoji{font-size:7.5rem;filter:drop-shadow(0 8px 28px rgba(0,0,0,.35))}
+.featured-body{padding:40px;display:flex;flex-direction:column;justify-content:center;border-left:4px solid #d97706}
+.badge{display:inline-block;font-size:.65rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;padding:3px 12px;border-radius:20px;color:#fff;margin-bottom:14px;font-family:system-ui,sans-serif}
+.featured-body h2{font-size:clamp(1.45rem,3vw,2.4rem);line-height:1.2;margin-bottom:12px;font-weight:900}
+.featured-body .deck{font-size:1.05rem;color:#4b5563;font-style:italic;margin-bottom:18px;line-height:1.55}
+.featured-body .story-text p{font-size:.93rem;color:#374151;margin-bottom:10px;line-height:1.72}
+/* DIVIDER */
+.section-divider{text-align:center;margin:0 0 32px;position:relative}
+.section-divider::before{content:'';position:absolute;top:50%;left:0;right:0;height:1px;background:#d1d5db}
+.section-divider span{position:relative;background:#fef9f0;padding:0 20px;font-size:.7rem;letter-spacing:4px;text-transform:uppercase;color:#9ca3af;font-family:system-ui,sans-serif}
+/* GRID */
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+@media(max-width:900px){.grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:580px){.grid{grid-template-columns:1fr}}
+/* CARD */
+.card{background:#fff;border-radius:12px;overflow:hidden;box-shadow:0 2px 14px rgba(0,0,0,.07);display:flex;flex-direction:column;transition:transform .2s,box-shadow .2s}
+.card:hover{transform:translateY(-4px);box-shadow:0 10px 32px rgba(0,0,0,.12)}
+.card-img{display:flex;align-items:center;justify-content:center;padding:28px 20px;min-height:150px}
+.card-emoji{font-size:3.8rem;filter:drop-shadow(0 4px 10px rgba(0,0,0,.28))}
+.card-content{padding:18px 20px 20px;flex:1;display:flex;flex-direction:column}
+.card-headline{font-size:1rem;font-weight:800;line-height:1.3;margin-bottom:7px}
+.card-deck{font-size:.82rem;color:#4b5563;font-style:italic;margin-bottom:10px;line-height:1.5}
+.card-text{font-size:.8rem;color:#374151;line-height:1.65;flex:1}
+.card-text p{margin-bottom:7px}
+/* SOURCE LINK */
+a.source{display:inline-flex;align-items:center;gap:5px;font-size:.72rem;color:#9ca3af;text-decoration:none;margin-top:12px;padding-top:12px;border-top:1px solid #f3f4f6;font-family:system-ui,sans-serif;transition:color .2s}
+a.source:hover{color:#d97706}
+a.source::before{content:'→'}
+/* FOOTER */
+footer{text-align:center;padding:40px 20px;color:#9ca3af;font-size:.78rem;font-family:system-ui,sans-serif;border-top:1px solid #e5e7eb;margin-top:20px}
+footer strong{color:#d97706}
+</style>
+</head>
+<body>
+<header class="masthead">
+  <div class="masthead-top">
+    <p class="edition-label">Est. 2026 · Good News Only · Vol. 1</p>
+    <h1 class="newspaper-name">The Morning Sunshine</h1>
+    <p class="motto">"All the news that's fit to smile about"</p>
+  </div>
+  <div class="masthead-meta">
+    <span>Daily Edition</span>
+    <span class="date">Thursday, April 16, 2026</span>
+    <span>☀️ Sunny Skies Ahead</span>
+  </div>
+</header>
+<div class="ticker">✨ Today's Edition: 10 Stories Guaranteed to Brighten Your Day ✨</div>
+
+<main class="container">
+
+<!-- FEATURED STORY -->
+<article class="featured">
+  <div class="featured-img" style="background:linear-gradient(135deg,#1e3a8a,#3b82f6,#06b6d4)">
+    <span class="featured-emoji">🚀</span>
+  </div>
+  <div class="featured-body">
+    <span class="badge" style="background:#3b82f6">Science</span>
+    <h2>Artemis II Crew Shatters Distance Record on Historic Moon Flyby</h2>
+    <p class="deck">Four astronauts traveled 252,756 miles from Earth—farther than any humans since Apollo 17 in 1972.</p>
+    <div class="story-text">
+      <p>Four astronauts aboard NASA's Orion spacecraft made history on April 6 when they completed a breathtaking lunar flyby, reaching 252,756 miles from Earth—a new record for the farthest humans have ventured from our planet since Apollo 17 in 1972. The crew of Reid Wiseman, Victor Glover, Christina Koch, and Canadian Space Agency astronaut Jeremy Hansen captured more than 7,000 photographs of the Moon's far side during their seven-hour flyby.</p>
+      <p>Adding to the wonder, the crew witnessed a rare solar eclipse from their extraordinary vantage point, with Commander Wiseman describing the view as "beyond words." All four astronauts splashed down safely. The success of Artemis II paves the way for Artemis III, which aims to land the first woman and first person of color on the lunar surface—a milestone that now feels closer than ever.</p>
+    </div>
+    <a class="source" href="https://www.nasa.gov/news-release/nasa-welcomes-record-setting-artemis-ii-moonfarers-back-to-earth/" target="_blank" rel="noopener">NASA</a>
+  </div>
+</article>
+
+<div class="section-divider"><span>More Good News</span></div>
+
+<div class="grid">
+
+<!-- CARD 2 -->
+<article class="card">
+  <div class="card-img" style="background:linear-gradient(135deg,#78350f,#f59e0b)">
+    <span class="card-emoji">🦕</span>
+  </div>
+  <div class="card-content">
+    <span class="badge" style="background:#f59e0b">Funny</span>
+    <h3 class="card-headline">682 People in Dino Suits Stomp to a Guinness World Record</h3>
+    <p class="card-deck">The University of Calgary celebrated its 60th birthday in the most prehistoric way possible.</p>
+    <div class="card-text">
+      <p>On April 11, the University of Calgary gathered 682 students, professors, staff, and children in inflatable dinosaur costumes to claim a Guinness World Record for the largest-ever gathering of dino-costumed humans. The event, dubbed "Rex's Jurassic Jamboree," crushed the previous record of 468.</p>
+      <p>After a Guinness adjudicator confirmed the title, the crowd erupted dancing to Queen's "We Are the Champions." Guinness rules strictly prohibited dragons, keeping the prehistoric authenticity intact. "The old record is extinct," quipped one professor, presumably from inside a bright green inflatable suit with tiny plastic arms.</p>
+    </div>
+    <a class="source" href="https://www.cbc.ca/news/canada/calgary/calgary-dinosaur-guinness-world-record-9.7161121" target="_blank" rel="noopener">CBC News</a>
+  </div>
+</article>
+
+<!-- CARD 3 -->
+<article class="card">
+  <div class="card-img" style="background:linear-gradient(135deg,#831843,#ec4899)">
+    <span class="card-emoji">❤️</span>
+  </div>
+  <div class="card-content">
+    <span class="badge" style="background:#ec4899">Kindness</span>
+    <h3 class="card-headline">Doctor Adopts Boy Who Arrived at Heart Surgery Completely Alone</h3>
+    <p class="card-deck">Nebraska anesthesiologist Dr. Amy Beethe adopted a lonely 4-year-old patient—then found loving homes for all five of his siblings.</p>
+    <div class="card-text">
+      <p>When Dr. Amy Beethe met True, he was four years old, sitting alone at Children's Nebraska about to undergo open-heart surgery—no parent present because his social worker had COVID. She couldn't forget him, brought her husband to meet the boy, and within weeks True was part of their family.</p>
+      <p>But the kindness grew further. True had five siblings in an unstable home. Dr. Beethe recruited her sister, sister-in-law, and a coworker to each adopt a sibling—and when one child remained, she and Ryan welcomed little Laney too. Today True is nine, living joyfully with a family stretching lovingly across three households.</p>
+    </div>
+    <a class="source" href="https://www.goodnewsnetwork.org/doctor-adopts-4-yo-heart-surgery-patient-who-didnt-have-a-family/" target="_blank" rel="noopener">Good News Network</a>
+  </div>
+</article>
+
+<!-- CARD 4 -->
+<article class="card">
+  <div class="card-img" style="background:linear-gradient(135deg,#14532d,#22c55e)">
+    <span class="card-emoji">☀️</span>
+  </div>
+  <div class="card-content">
+    <span class="badge" style="background:#22c55e">Environment</span>
+    <h3 class="card-headline">Historic Milestone: Wind and Sun Beat Fossil Fuels Across All of Europe</h3>
+    <p class="card-deck">For the first time ever, renewables generated more EU electricity than coal, oil, and gas combined.</p>
+    <div class="card-text">
+      <p>Wind and solar generated 30% of EU electricity in 2025, edging past fossil fuels at 29%—a milestone that would have seemed impossible a decade ago, per analysis from clean-energy think tank Ember. Solar alone grew by 20%+ for the fourth year running. Coal fell to an all-time low of 9.2%.</p>
+      <p>Fourteen of the EU's 27 member states now produce more power from clean sources than fossils. Meanwhile Norway hit its own milestone: 97% of new car sales are now electric vehicles, with EVs outnumbering diesel cars on the road. "This is a turning point that can't be undone," one researcher declared.</p>
+    </div>
+    <a class="source" href="https://www.euronews.com/2026/01/22/solar-and-wind-overtake-fossil-fuels-in-the-eu-for-the-first-time-can-the-power-grid-keep-" target="_blank" rel="noopener">Euronews</a>
+  </div>
+</article>
+
+<!-- CARD 5 -->
+<article class="card">
+  <div class="card-img" style="background:linear-gradient(135deg,#7f1d1d,#ef4444)">
+    <span class="card-emoji">🛡️</span>
+  </div>
+  <div class="card-content">
+    <span class="badge" style="background:#ef4444">Health</span>
+    <h3 class="card-headline">US Roads Are Safer Than They've Been in Over a Century</h3>
+    <p class="card-deck">Traffic deaths fell 6.7% in 2025, reaching the second-lowest fatality rate in 100-plus years of records.</p>
+    <div class="card-text">
+      <p>Traffic deaths in the US dropped to 36,640 in 2025—a 6.7% decline—giving the nation its second-lowest traffic fatality rate in more than a century of records (1.10 deaths per 100M vehicle miles). Fatalities fell in 39 states, DC, and Puerto Rico.</p>
+      <p>The fourth quarter of 2025 marked the 15th consecutive quarter of declining road deaths—a remarkable 3-plus year run. Experts credit advances in vehicle tech (automatic emergency braking, lane-departure warnings) and greater awareness of impaired driving. Every 1% reduction in the fatality rate represents hundreds of lives saved.</p>
+    </div>
+    <a class="source" href="https://www.nhtsa.gov/press-releases/traffic-deaths-2025-early-estimates-2024-annual" target="_blank" rel="noopener">NHTSA</a>
+  </div>
+</article>
+
+<!-- CARD 6 -->
+<article class="card">
+  <div class="card-img" style="background:linear-gradient(135deg,#052e16,#16a34a)">
+    <span class="card-emoji">🐼</span>
+  </div>
+  <div class="card-content">
+    <span class="badge" style="background:#16a34a">Animals</span>
+    <h3 class="card-headline">Giant Pandas Graduate From 'Endangered' to 'Vulnerable'</h3>
+    <p class="card-deck">Fifty years of conservation effort in China officially lifted the beloved bear off the world's most-at-risk species list.</p>
+    <div class="card-text">
+      <p>The IUCN upgraded the giant panda from "Endangered" to "Vulnerable," recognizing a wild population now at approximately 1,900—a 17% increase over the previous decade. China established 67 panda reserves protecting nearly two-thirds of all wild giant pandas.</p>
+      <p>"This is what's possible when communities commit to conservation," said WWF's panda director. Crucially, bamboo corridor restoration reconnected fragmented habitats. "We can genuinely bring species back from the brink," said one researcher. "The panda is living proof."</p>
+    </div>
+    <a class="source" href="https://www.greenmatters.com/nature/giant-panda-no-longer-endangered" target="_blank" rel="noopener">Green Matters</a>
+  </div>
+</article>
+
+<!-- CARD 7 -->
+<article class="card">
+  <div class="card-img" style="background:linear-gradient(135deg,#312e81,#6366f1)">
+    <span class="card-emoji">👓</span>
+  </div>
+  <div class="card-content">
+    <span class="badge" style="background:#6366f1">Tech</span>
+    <h3 class="card-headline">Smart Glasses Are Quietly Giving Blind People a New Freedom</h3>
+    <p class="card-deck">Ray-Ban Meta AI glasses let visually impaired users read menus, navigate streets, and identify objects—entirely hands-free.</p>
+    <div class="card-text">
+      <p>Ray-Ban Meta AI smart glasses pair a camera with AI to narrate the world in real time for people with visual impairments. Wearers can glance at a menu and hear it read aloud, look toward a sign and receive spoken directions, or scan a grocery shelf to identify products—all without touching a phone.</p>
+      <p>The American Foundation for the Blind called them "a genuine leap" in assistive tech. A Be My Eyes partnership connects wearers with sighted volunteers via a live camera feed. At $299—far cheaper than previous dedicated assistive devices—this technology is changing lives right now.</p>
+    </div>
+    <a class="source" href="https://www.afb.org/aw/fall2025/meta-glasses-review" target="_blank" rel="noopener">American Foundation for the Blind</a>
+  </div>
+</article>
+
+<!-- CARD 8 -->
+<article class="card">
+  <div class="card-img" style="background:linear-gradient(135deg,#4c1d95,#8b5cf6)">
+    <span class="card-emoji">🧠</span>
+  </div>
+  <div class="card-content">
+    <span class="badge" style="background:#8b5cf6">Health</span>
+    <h3 class="card-headline">Science Confirms: Optimism Is a Brain Health Superpower</h3>
+    <p class="card-deck">A US-led study found that people who score higher on optimism measures have a 15% lower risk of developing dementia.</p>
+    <div class="card-text">
+      <p>A major US-led study found that people with higher optimism scores have a 15% lower risk of developing dementia. Each six-point increase on the researchers' optimism scale was linked to a meaningful reduction in risk, even after accounting for education, exercise, and social engagement.</p>
+      <p>Researchers believe optimistic people manage stress better and build greater "cognitive reserve." Best of all: optimism can be practiced. Writing down three things you're grateful for each day has been shown to measurably shift a person's outlook. So the prescription for brain health may simply be expecting tomorrow to be a little brighter.</p>
+    </div>
+    <a class="source" href="https://www.positive.news/society/good-news-stories-from-week-15-of-2026/" target="_blank" rel="noopener">Positive News</a>
+  </div>
+</article>
+
+<!-- CARD 9 -->
+<article class="card">
+  <div class="card-img" style="background:linear-gradient(135deg,#134e4a,#14b8a6)">
+    <span class="card-emoji">🐢</span>
+  </div>
+  <div class="card-content">
+    <span class="badge" style="background:#14b8a6">Animals</span>
+    <h3 class="card-headline">Missing 180 Years, Giant Tortoises Finally Come Home to Galápagos</h3>
+    <p class="card-deck">158 tortoises bred from century-old DNA were released on Floreana Island in a landmark conservation triumph.</p>
+    <div class="card-text">
+      <p>On February 20, Galápagos island Floreana welcomed back its giant tortoises for the first time in ~180 years. The Charles Darwin Foundation released 158 juveniles carrying the long-extinct lineage's DNA—bred from individuals on neighboring Isabela Island identified by scientists in 2008 as having Floreana ancestry.</p>
+      <p>The $15M project first cleared invasive rats, cats, and pigs from Floreana before the tortoises arrived. As ecosystem engineers, tortoises reshape vegetation through grazing and seed dispersal, benefiting dozens of other species. "We've proven," said one researcher, "that even 180-year-old losses are not always permanent."</p>
+    </div>
+    <a class="source" href="https://www.nationalgeographic.com/animals/article/giant-tortoises-galapagos-floreana-island" target="_blank" rel="noopener">National Geographic</a>
+  </div>
+</article>
+
+<!-- CARD 10 -->
+<article class="card">
+  <div class="card-img" style="background:linear-gradient(135deg,#164e63,#06b6d4)">
+    <span class="card-emoji">🤝</span>
+  </div>
+  <div class="card-content">
+    <span class="badge" style="background:#06b6d4">Community</span>
+    <h3 class="card-headline">Arizona Neighbors Log 500 Acts of Kindness in Just One Week</h3>
+    <p class="card-deck">The Fiesta Sports Foundation's sixth annual Kindness Arizona Week wrapped with a state-wide wave of generosity earning a Governor's proclamation.</p>
+    <div class="card-text">
+      <p>Across Arizona in late March, hundreds of volunteers completed eight service projects and documented nearly 500 individual acts of kindness during Kindness Arizona Week—earning an official proclamation from Governor Katie Hobbs. Participants from Tucson to Rio Verde helped at food banks, cleaned parks, and surprised strangers with gifts.</p>
+      <p>A highlight: the Foundation's Surprise Squad partnered with Ri's Coffee, a Phoenix café owned and operated by people with disabilities. "Kindness is contagious," organizers noted. Over six years, the initiative has now logged more than 3,000 documented acts of kindness across the state.</p>
+    </div>
+    <a class="source" href="https://www.fiestasportsfoundation.org/news/2026/3/31/community-engagement-fiesta-sports-foundation-completes-sixth-annual-kindness-arizona-week-recognized-with-official-proclamation-from-gov-katie-hobbs.aspx" target="_blank" rel="noopener">Fiesta Sports Foundation</a>
+  </div>
+</article>
+
+</div><!-- /grid -->
+</main>
+
+<footer>
+  <strong>The Morning Sunshine</strong> · All the news that's fit to smile about<br>
+  Published daily at 7 AM · Powered by real good news &amp; ☀️ · <a href="https://github.com/mpechuk/morning-sunshine-" style="color:#d97706">GitHub</a>
+</footer>
+</body>
+</html>
