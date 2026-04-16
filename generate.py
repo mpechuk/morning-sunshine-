@@ -59,16 +59,21 @@ def fetch_rss_stories() -> list[dict]:
 # 2. CLAUDE — generate 10 story objects
 # ---------------------------------------------------------------------------
 
-STORY_SCHEMA = """{
-  "headline": "Catchy headline, max 12 words",
-  "deck": "One-sentence journalistic subheadline",
-  "body": "2-3 paragraph newspaper-style article body (~150 words)",
-  "category": "One of: Science|Animals|Kindness|Funny|Sports|Community|Environment|Arts|Tech|Health",
-  "emoji": "One relevant emoji",
-  "imageSearch": "4-6 word image search query",
-  "sourceUrl": "Actual URL of the source article",
-  "sourceName": "Publication name"
-}"""
+def _load_newspaper_def() -> str:
+    """Read story schema fields from newspaper.md."""
+    md_path = os.path.join(os.path.dirname(__file__), "newspaper.md")
+    with open(md_path, encoding="utf-8") as f:
+        content = f.read()
+    # Extract the Story Schema table rows into a compact JSON-schema description
+    lines = [l for l in content.splitlines() if l.startswith("| `")]
+    fields = {}
+    for line in lines:
+        parts = [p.strip() for p in line.strip("|").split("|")]
+        key = parts[0].strip("`")
+        fields[key] = parts[1]
+    return json.dumps(fields, indent=2)
+
+STORY_SCHEMA = _load_newspaper_def()
 
 CATEGORY_STYLES = {
     "Science":     ("#3b82f6", "linear-gradient(135deg,#1e3a8a,#3b82f6)"),
