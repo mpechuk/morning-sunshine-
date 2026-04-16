@@ -267,8 +267,9 @@ def build_html(stories: list[dict], date_str: str) -> str:
 
 def main() -> None:
     api_key = os.environ.get("ANTHROPIC_API_KEY")
-    if not api_key:
-        print("Error: ANTHROPIC_API_KEY environment variable not set.", file=sys.stderr)
+    auth_token = os.environ.get("ANTHROPIC_AUTH_TOKEN")
+    if not api_key and not auth_token:
+        print("Error: ANTHROPIC_API_KEY or ANTHROPIC_AUTH_TOKEN environment variable not set.", file=sys.stderr)
         sys.exit(1)
 
     today = datetime.date.today()
@@ -280,7 +281,10 @@ def main() -> None:
     print(f"[info] Got {len(rss_stories)} RSS stories")
 
     print("[info] Calling Claude API...")
-    client = anthropic.Anthropic(api_key=api_key)
+    if api_key:
+        client = anthropic.Anthropic(api_key=api_key)
+    else:
+        client = anthropic.Anthropic(auth_token=auth_token)
     stories = generate_stories(client, rss_stories, date_str)
     print(f"[info] Generated {len(stories)} stories")
 
