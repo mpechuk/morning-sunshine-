@@ -1,14 +1,14 @@
 # The Morning Sunshine
 
 **Motto:** "All the news that's fit to smile about"  
-**Edition:** Est. 2026 · Good News Only · Vol. 1  
-**Published:** Daily at 7 AM  
+**Edition:** Est. 2026 · Good News Only · Vol. 1  (update with incremental number)
+**Published:** Daily at 7 AM  (put exact time of the update)
 
 ---
 
 ## Editorial Mission
 
-Publish ONLY happy, optimistic, funny, or uplifting news. Every story must leave the reader feeling better than before they read it.
+Publish ONLY happy, optimistic, funny, or uplifting news. Every story must leave the reader feeling better than before they read it. All news should be from the date of run
 
 ---
 
@@ -34,8 +34,6 @@ Each edition contains exactly **10 stories**. Every story must include:
 Stories must be diverse across categories. Available categories:
 
 - **Science** — discoveries, research breakthroughs, space
-- **Animals** — wildlife, pets, conservation wins
-- **Kindness** — acts of generosity, community support, human warmth
 - **Funny** — lighthearted, humorous, or absurd good news
 - **Sports** — athletic achievements, sportsmanship, records
 - **Community** — local heroes, neighbourhood initiatives, civic wins
